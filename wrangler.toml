@@ -1,0 +1,18 @@
+name = "ridetrack-backend"
+type = "javascript"
+account_id = "061e3c5d5e7f91baadd87efae66a5c2b"
+compatibility_date = "2024-02-12"
+workers_dev = true
+
+compatibility_flags = ["nodejs_compat"]
+
+[build]
+command = "npm run build"
+
+[build.upload]
+dir = "dist"
+main = "dist/server.js"
+
+
+[env.production]
+routes = ["https://ridetrack-backend.iancamps90-061.workers.dev/*"]

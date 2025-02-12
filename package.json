@@ -5,12 +5,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.ts",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "deploy": "npx wrangler deploy"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
+
   "dependencies": {
     "@sequelize/core": "^7.0.0-alpha.44",
     "@types/express": "^5.0.0",
@@ -26,6 +30,7 @@
     "sequelize": "^6.37.5",
     "sequelize-typescript": "^2.1.6"
   },
+
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express-session": "^1.18.1",
